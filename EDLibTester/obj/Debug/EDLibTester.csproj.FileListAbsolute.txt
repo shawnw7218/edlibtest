@@ -1,0 +1,17 @@
+C:\DEVEL\EDLibTester\EDLibTester\bin\Debug\EDLibTester.exe.config
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester.csprojResolveAssemblyReference.cache
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\App.g.cs
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester_MarkupCompile.cache
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester.g.resources
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester.Properties.Resources.resources
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester.csproj.GenerateResource.Cache
+C:\DEVEL\EDLibTester\EDLibTester\bin\Debug\EDLibTester.exe
+C:\DEVEL\EDLibTester\EDLibTester\bin\Debug\EDLibTester.pdb
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester.exe
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester.pdb
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\Views\MainWindowView.baml
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\Views\MainWindowView.g.cs
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\Views\EDTabControlView.baml
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\Views\EDTabControlView.g.cs
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\DEVEL\EDLibTester\EDLibTester\obj\Debug\EDLibTester_MarkupCompile.lref

@@ -1,0 +1,56 @@
+﻿<Window x:Class="EDLibTester.Views.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:v="clr-namespace:EDLibTester.Views"
+        Title="EBLibTester" Height="600" Width="525">
+
+    <Window.Resources>        
+        <DataTemplate x:Key="EDTabControlView">
+            <v:EDTabControlView DataContext="{Binding}" />
+        </DataTemplate>
+
+        <Style x:Key="OnOffToggleStyle" TargetType="ToggleButton">
+            <Setter Property="Content" Value="Off"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <ContentPresenter />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Content" Value="On">
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>           
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock>File:</TextBlock>
+            <TextBox Text="{Binding FileName}" Width="100px"></TextBox>
+            <Button>Browse</Button>
+            <Button>Load File</Button>
+        </StackPanel>
+        <TextBlock Grid.Row="1">Loaded File:</TextBlock>
+        <TextBox Grid.Row="2"></TextBox>
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <ToggleButton>Encrypt</ToggleButton>
+            <ToggleButton>Decrypt</ToggleButton>
+        </StackPanel>
+        <TabControl Grid.Row="4" ItemsSource="{Binding Path=EDTabs}" ContentTemplate="{StaticResource EDTabControlView}" />
+        <StackPanel Grid.Row="5" Background="LightGray">
+            <TextBlock>Status</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
